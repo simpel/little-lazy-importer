@@ -1,7 +1,7 @@
 {
   "name": "littlelazyimporter",
   "displayName": "little lazy importer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Convert standard ESM import to React Lazy imports",
   "categories": [
     "Other"
@@ -27,6 +27,7 @@
     "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
     "test": "node ./out/test/runTest.js",
     "vscode:prepublish": "yarn run package",
+    "deploy": "yarn run package && vsce publish --yarn",
     "watch": "webpack --watch",
     "watch-tests": "tsc -p . -w --outDir out"
   },

@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+    - main
+    
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    environment: production
+  
+    steps:
+    - run: |
+       git config --global user.email "me@joelsanden.se"
+       git config --global user.name "Joel Sandén"
+    - name: Checkout master
+      uses: actions/checkout@master
+    - name: Run yarn
+      run: yarn
+    - name: Release new version
+      run: yarn release
+    - name: Commit new version
+      run: git push --follow-tags origin main
+    - name: Publish
+      if: success()
+      run: yarn deploy
+      env:
+        VSCE_PAT: ${{ secrets.VS_CODE_MARKETPLACE_ACCESS_TOKEN }}
