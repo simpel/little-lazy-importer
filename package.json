@@ -1,7 +1,7 @@
 {
   "name": "littlelazyimporter",
   "displayName": "little lazy importer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert standard ESM import to React Lazy imports",
   "categories": [
     "Other"
