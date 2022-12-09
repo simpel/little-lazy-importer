@@ -19,5 +19,4 @@ Little Lazy Importer converts regular React imports to React.Lazy imports. Ain't
 
 
 ## Known Issues
-
 The exstension only convert imports, you still need to add support for `Suspense` etc.
