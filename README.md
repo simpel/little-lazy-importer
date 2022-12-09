@@ -1,71 +1,23 @@
-# littlelazyimporter README
+# Little Lazy Importer
 
-This is the README for your extension "littlelazyimporter". After writing up a brief description, we recommend including the following sections.
+Little Lazy Importer converts regular React imports to React.Lazy imports. Ain't that handy!
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+\!\[Convert\]\(assets/feature.gif\)
 
-For example if there is an image subfolder under your extension project workspace:
+## How to
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open a react js file
+2. `Cmd+P` write `Convert to React Lazy Imports` and hit `Enter`
+3. Select the imports you want to convert
+4. Done!
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## More good stuff
 
-## Requirements
+🚀🚀🚀 Check out my other components: https://marketplace.visualstudio.com/publishers/se-joelsanden
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+The exstension only convert imports, you still need to add support for `Suspense` etc.
